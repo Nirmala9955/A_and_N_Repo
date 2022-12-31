@@ -1,0 +1,16 @@
+package com.ic.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name = "role")
+@Data
+public class Role {
+	@Id
+	private Integer roleId;
+	private String role;
+}
