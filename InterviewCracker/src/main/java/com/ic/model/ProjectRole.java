@@ -12,10 +12,8 @@ import lombok.Data;
 @Table(name = "project_role")
 public class ProjectRole {
 	@Id
-	@Column(name = "roleId")
 	private Integer roleId;
-	@Column(name = "roleTitle")
 	private String roleTitle;
-	@Column(name = "isActive")
+	@Column(name = "is_active")
 	private Integer isACtive;
 }

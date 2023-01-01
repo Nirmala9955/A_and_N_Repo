@@ -1,0 +1,66 @@
+User
+---------------------------
+	- userId
+	- uuid
+	- userName
+	- password
+	- firstName
+	- lastName
+	- emailId
+	- phoneNo
+	- gender
+	- role
+	- photo
+	- isActive
+
+Role
+----------------
+	- roleId
+	- role
+	- isActive
+	
+UserSkillDetails
+-----------------------------
+	- skillId
+	- skill
+	- knowledgeLevel
+	- userId
+	- total year of experience
+
+UserEducationDetailss
+-------------------------------
+
+UserProjectDetails
+---------------------------
+	- projectId
+	- projectTitle
+	- projectTag
+	- Client
+	- projectStatus
+	- workedForm
+	- workedTill
+	- detailsOfProject
+	- userId
+	- isActive
+	
+UserProjectMoreDetails
+-------------------------------------
+	- moredetailsId
+	- projectId
+	- projectLocation
+	- projectSite
+	- natureOfEmployment
+	- teamSize
+	- role
+	- roleDescription
+	- skillUsed
+
+ProjectRoles
+------------------
+	- roleId
+	- roleTitle
+	- isActive
+	
+UserPersonalDetails
+-----------------------------
+ 
