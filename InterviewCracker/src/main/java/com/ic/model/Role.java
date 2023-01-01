@@ -6,9 +6,9 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "role")
-@Data
 public class Role {
 	@Id
 	private Integer roleId;

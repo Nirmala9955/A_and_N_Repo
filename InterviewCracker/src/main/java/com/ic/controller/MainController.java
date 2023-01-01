@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.ic.model.ProjectRole;
 import com.ic.model.Role;
 import com.ic.service.IRoleService;
 
@@ -55,8 +56,18 @@ public class MainController {
 		logger.debug("Inside fetchRoles() method");
 		//Invoking service method
 		List<Role> roleList = roleService.getRoles();
-		logger.info("Role list - "+roleList);
+		logger.info("Roles - "+roleList);
 		return roleList;
+	}
+	
+	@GetMapping("/projectRoles")
+	@ResponseBody
+	public List<ProjectRole> fetchProjectRoles() {
+		logger.debug("Inside fetchProjectRoles() method");
+		//Invoking service method
+		List<ProjectRole> projectRoleList = roleService.getProjectRoles();
+		logger.info("Project Roles - "+projectRoleList);
+		return projectRoleList;
 	}
 	
 }
